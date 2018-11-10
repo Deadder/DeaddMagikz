@@ -1,0 +1,9 @@
+Make sure to download the server version of Minecraft and place it in the root of this server.
+
+The current version of Minecraft server needed is 1.11.2 - it can be downloaded here: https://launcher.mojang.com/v1/objects/f00c294a1576e03fddcac777c3cf4c7d404c4ba4/server.jar
+
+Once the server is downloaded and in place, rename the server.jar file to minecraft_server.1.11.2.jar
+
+When you are ready to run the server, make sure to mark the eula=true in the eula.txt file. Then from a command window run:
+
+		Java -jar ForgeServer_Run.jar
