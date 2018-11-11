@@ -1,4 +1,5 @@
-# DeaddMagik Server
+![alt text](https://deaddmagikz.azurewebsites.net/images/DeaddMagikzBlockdStars_8bit.png "DeaddMagikz")
+# Server
 This project contains all of the files to deploy a Minecraft: Deaddmagikz server with the excpetion of the Minecraft server binary itself.
 
 ## Install
