@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<ConfigHelp>
+		<ConfigHelp Name="Mod Site">
+			<ModSite DataType="@S" Default="">https://minecraft.curseforge.com/projects/simplecore-api</ModSite>
+		</ConfigHelp>
+		<ConfigHelp Name="Documentation">
+			<DocumentationLink DataType="@S" Default="">Please read https://github.com/AleXndrTheGr8st/SimpleCore/wiki/Using-The-Config</DocumentationLink>
+		</ConfigHelp>
+		<ConfigHelp Name="Data Types">
+			<ABOUT DataType="@S" Default="">It is important that the correct data types are used. They are designated by the @ symbol.</ABOUT>
+			<Boolean DataType="@B" Default="">Accepts: true, false.</Boolean>
+			<Integer DataType="@I" Default="">Accepts: Whole numbers only, such as 2 or 4096.</Integer>
+			<Float DataType="@F" Default="">Accepts: Decimal numbers, such as 1.5 or 98.9.</Float>
+			<Double DataType="@D" Default="">Accepts: Decimal numbers, such as 1.5 or 98.9.</Double>
+			<String DataType="@S" Default="">Accepts: Any number or character, such as abcdefg or 9dsa29213mn#.</String>
+		</ConfigHelp>
+	</ConfigHelp>
+	<Toggles>
+		<Toggle Name="SimpleCore Toggles">
+			<VerboseLogging DataType="@B" Default="false">false</VerboseLogging>
+			<GlobalUpdateChecking DataType="@B" Default="true">true</GlobalUpdateChecking>
+			<UpdateChecker DataType="@B" Default="true">true</UpdateChecker>
+			<Tabs DataType="@B" Default="true">true</Tabs>
+			<SeparateTabs DataType="@B" Default="true">true</SeparateTabs>
+		</Toggle>
+	</Toggles>
+</Configuration>

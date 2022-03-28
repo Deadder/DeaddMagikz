@@ -1,0 +1,503 @@
+{
+  "questSettings": {
+    "betterquesting": {
+      "livesdef": 3,
+      "home_anchor_y": 0.0,
+      "livesmax": 10,
+      "home_anchor_x": 0.5,
+      "editmode": false,
+      "hardcore": false,
+      "home_image": "betterquesting:textures/gui/default_title.png",
+      "home_offset_x": -128,
+      "home_offset_y": 0
+    }
+  },
+  "questDatabase": [
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "visibility": "CHAIN",
+          "simultaneous": false,
+          "icon": {
+            "id": "toughasnails:campfire",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "What are these things?",
+          "desc": "For some reason, beyond your comprehension you have some items you don\u0027t remember purchasing or otherwise coming to own.  Three bottles of water (why §ojust§r water?) and a wierd journal called \"§dAstral Sorcery: The Wiki§r\" - what? \"Wiki\" sounds like some sort of candle related dance...that can\u0027t be right.\n\nWell better start by finding some food and shelter...might have to get creative."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "groupDetect": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:porkchop",
+              "Count": 1,
+              "OreDict": "listAllmeatraw",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval",
+          "index": 0
+        },
+        {
+          "partialMatch": false,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:crafting_table",
+              "Count": 1,
+              "OreDict": "workbench",
+              "Damage": 0
+            },
+            {
+              "id": "toughasnails:campfire",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 2
+        }
+      ],
+      "rewards": [
+        {
+          "amount": 5,
+          "isLevels": true,
+          "rewardID": "bq_standard:xp",
+          "index": 0
+        }
+      ],
+      "preRequisites": [],
+      "questID": 0
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "visibility": "CHAIN",
+          "simultaneous": false,
+          "icon": {
+            "id": "toughasnails:water_bottle",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": true,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Wait...Still thirsty",
+          "desc": "Fogetting to deal with thirst in the first set of priorities - you realize water should be achieved.  Since, well the three bottles of water are going to run out soon-ish."
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "toughasnails:water_bottle",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 2
+        }
+      ],
+      "rewards": [
+        {
+          "amount": 25,
+          "isLevels": false,
+          "rewardID": "bq_standard:xp",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        0
+      ],
+      "questID": 1
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "visibility": "CHAIN",
+          "simultaneous": false,
+          "icon": {
+            "id": "toughasnails:water_bottle",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 1
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": true,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "OK...This doesn\u0027t look right...",
+          "desc": "You have filled a water bottle or two with some water from your surroundings.  Except, well, it looks like what\u0027s left after washing a dog. There has to be a way to make this more...palatable.  Maybe heat...or a filter?"
+        }
+      },
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "toughasnails:water_bottle",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 1
+            }
+          ],
+          "taskID": "bq_standard:crafting",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "amount": 2,
+          "isLevels": true,
+          "rewardID": "bq_standard:xp",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        1
+      ],
+      "questID": 2
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "visibility": "CHAIN",
+          "simultaneous": false,
+          "icon": {
+            "id": "bloodmagic:itemupgradetome",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0,
+            "tag": {
+              "level:3": 9,
+              "key:8": "bloodmagic.upgrade.disoriented"
+            }
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Wait - I feel different",
+          "desc": "After discovering food stuffs and how to light small trees on fire, it occurs to you that you feel different.  Experienced. I bet there is something you can do with this new found experience.\n\nPerhaps looking really hard at your inventory you will find something like a button or convenient tab that will help..."
+        }
+      },
+      "tasks": [
+        {
+          "amount": 1,
+          "isLevels": true,
+          "consume": true,
+          "taskID": "bq_standard:xp",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "amount": 2,
+          "isLevels": true,
+          "rewardID": "bq_standard:xp",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        0
+      ],
+      "questID": 3
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "visibility": "CHAIN",
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:experience_bottle",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Wow - Got Best! Now Weapon\u0027s Turn",
+          "desc": "Here\u0027s the deal, you became experienced and then got  awesomer. So, really, couldn\u0027t your weapon also get awesomer as it experiences the stabbing and the cutting? Maybe...even, magikal...?\n\n§7(THINKING)Why did I just spell \u0027magikal\u0027 with a \u0027k\u0027...? Maybe \u0027K\" is somehow important here...(DONETHINKING)\n\n§rRemember - even if your weapon can be awesomer, it still needs maintenance and repair."
+        }
+      },
+      "tasks": [
+        {
+          "amount": 50,
+          "isLevels": false,
+          "consume": true,
+          "taskID": "bq_standard:xp",
+          "index": 0
+        }
+      ],
+      "rewards": [
+        {
+          "amount": 2,
+          "isLevels": true,
+          "rewardID": "bq_standard:xp",
+          "index": 0
+        }
+      ],
+      "preRequisites": [
+        3
+      ],
+      "questID": 4
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "issilent": false,
+          "snd_complete": "minecraft:entity.player.levelup",
+          "lockedprogress": false,
+          "tasklogic": "AND",
+          "repeattime": -1,
+          "simultaneous": false,
+          "icon": {
+            "id": "minecraft:cake",
+            "Count": 1,
+            "OreDict": "",
+            "Damage": 0
+          },
+          "globalshare": false,
+          "questlogic": "AND",
+          "partysinglereward": false,
+          "snd_update": "minecraft:entity.player.levelup",
+          "autoclaim": false,
+          "ismain": true,
+          "name": "Perhaps there is more to this whole survival thing...",
+          "desc": "It seems you have learned to survive, at least a little. Perhaps congratulations are in order...or dying. It is time to go on the first true excursion into the dangers of the night.  Remember what you have learned and that there is more to this world than just blood and steel.  Magik is strong here and can be harnessed.\n\n§7(THINKING)Again with the \u0027k\u0027 in \u0027magik\u0027(DONETHINKING)"
+        }
+      },
+      "tasks": [
+        {
+          "target": "minecraft:zombie",
+          "required": 5,
+          "subtypes": true,
+          "ignoreNBT": true,
+          "targetNBT": {},
+          "taskID": "bq_standard:hunt",
+          "index": 0
+        },
+        {
+          "amount": 65,
+          "isLevels": false,
+          "consume": true,
+          "taskID": "bq_standard:xp",
+          "index": 1
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "harvestcraft:chocolatesprinklecakeitem",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "harvestcraft:chocolatesprinklecake",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:choice",
+          "index": 1
+        }
+      ],
+      "preRequisites": [
+        4,
+        2
+      ],
+      "questID": 5
+    }
+  ],
+  "questLines": [
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "Awake, Thirsty, and Uncomfortably Alive",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": "Awoken in the middle of the nowhere, without anything except some random things you don\u0027t remember getting..."
+        }
+      },
+      "quests": [
+        {
+          "size": 24,
+          "x": 0,
+          "y": 0,
+          "id": 0
+        },
+        {
+          "size": 24,
+          "x": -24,
+          "y": 30,
+          "id": 1
+        },
+        {
+          "size": 24,
+          "x": -24,
+          "y": 72,
+          "id": 2
+        },
+        {
+          "size": 24,
+          "x": 24,
+          "y": 30,
+          "id": 3
+        },
+        {
+          "size": 24,
+          "x": 24,
+          "y": 72,
+          "id": 4
+        },
+        {
+          "size": 24,
+          "x": 0,
+          "y": 108,
+          "id": 5
+        }
+      ],
+      "lineID": 0,
+      "order": 0
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "The Path of The Wizard",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": "No Description"
+        }
+      },
+      "quests": [],
+      "lineID": 1,
+      "order": 1
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "The Path of The Warrior",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": "No Description"
+        }
+      },
+      "quests": [],
+      "lineID": 2,
+      "order": 2
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "The Shadow of The Ninja",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": "No Description"
+        }
+      },
+      "quests": [],
+      "lineID": 3,
+      "order": 3
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "The Minor of the Miner",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": "No Description"
+        }
+      },
+      "quests": [],
+      "lineID": 4,
+      "order": 4
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "The Home of The Architect",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": "No Description"
+        }
+      },
+      "quests": [],
+      "lineID": 5,
+      "order": 5
+    },
+    {
+      "properties": {
+        "betterquesting": {
+          "name": "The Stomach of The Agricultural Professional",
+          "bg_image": "",
+          "bg_size": 256,
+          "desc": "No Description"
+        }
+      },
+      "quests": [],
+      "lineID": 6,
+      "order": 6
+    }
+  ],
+  "format": "1.0.0"
+}

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<ConfigHelp>
+		<ConfigHelp Name="Mod Site">
+			<ModSite DataType="@S" Default="">http://minecraft.curseforge.com/projects/simpleores</ModSite>
+		</ConfigHelp>
+		<ConfigHelp Name="Documentation">
+			<DocumentationLink DataType="@S" Default="">Please read https://github.com/AleXndrTheGr8st/SimpleCore/wiki/Using-The-Config</DocumentationLink>
+		</ConfigHelp>
+		<ConfigHelp Name="Data Types">
+			<ABOUT DataType="@S" Default="">It is important that the correct data types are used. They are designated by the @ symbol.</ABOUT>
+			<Boolean DataType="@B" Default="">Accepts: true, false.</Boolean>
+			<Integer DataType="@I" Default="">Accepts: Whole numbers only, such as 2 or 4096.</Integer>
+			<Float DataType="@F" Default="">Accepts: Decimal numbers, such as 1.5 or 98.9.</Float>
+			<Double DataType="@D" Default="">Accepts: Decimal numbers, such as 1.5 or 98.9.</Double>
+			<String DataType="@S" Default="">Accepts: Any number or character, such as abcdefg or 9dsa29213mn#.</String>
+		</ConfigHelp>
+	</ConfigHelp>
+	<Ores>
+		<Ore Name="Copper Ore">
+			<Hardness DataType="@F" Default="1.7">1.7</Hardness>
+			<Resistance DataType="@F" Default="5.0">5.0</Resistance>
+			<LightValue DataType="@F" Default="0.0">0.0</LightValue>
+			<HarvestLevel DataType="@I" Default="1">1</HarvestLevel>
+			<HarvestTool DataType="@S" Default="pickaxe">pickaxe</HarvestTool>
+			<SpawnRate DataType="@I" Default="35">35</SpawnRate>
+			<VeinSize DataType="@I" Default="10">10</VeinSize>
+			<MinHeight DataType="@I" Default="1">1</MinHeight>
+			<MaxHeight DataType="@I" Default="90">90</MaxHeight>
+		</Ore>
+		<Ore Name="Tin Ore">
+			<Hardness DataType="@F" Default="3.0">3.0</Hardness>
+			<Resistance DataType="@F" Default="5.0">5.0</Resistance>
+			<LightValue DataType="@F" Default="0.0">0.0</LightValue>
+			<HarvestLevel DataType="@I" Default="1">1</HarvestLevel>
+			<HarvestTool DataType="@S" Default="pickaxe">pickaxe</HarvestTool>
+			<SpawnRate DataType="@I" Default="30">30</SpawnRate>
+			<VeinSize DataType="@I" Default="10">10</VeinSize>
+			<MinHeight DataType="@I" Default="1">1</MinHeight>
+			<MaxHeight DataType="@I" Default="90">90</MaxHeight>
+		</Ore>
+		<Ore Name="Mythril Ore">
+			<Hardness DataType="@F" Default="4.0">4.0</Hardness>
+			<Resistance DataType="@F" Default="5.0">5.0</Resistance>
+			<LightValue DataType="@F" Default="0.0">0.0</LightValue>
+			<HarvestLevel DataType="@I" Default="2">2</HarvestLevel>
+			<HarvestTool DataType="@S" Default="pickaxe">pickaxe</HarvestTool>
+			<SpawnRate DataType="@I" Default="10">10</SpawnRate>
+			<VeinSize DataType="@I" Default="8">8</VeinSize>
+			<MinHeight DataType="@I" Default="1">1</MinHeight>
+			<MaxHeight DataType="@I" Default="40">40</MaxHeight>
+		</Ore>
+		<Ore Name="Adamantium Ore">
+			<Hardness DataType="@F" Default="5.0">5.0</Hardness>
+			<Resistance DataType="@F" Default="5.0">5.0</Resistance>
+			<LightValue DataType="@F" Default="0.0">0.0</LightValue>
+			<HarvestLevel DataType="@I" Default="2">2</HarvestLevel>
+			<HarvestTool DataType="@S" Default="pickaxe">pickaxe</HarvestTool>
+			<SpawnRate DataType="@I" Default="6">6</SpawnRate>
+			<VeinSize DataType="@I" Default="6">6</VeinSize>
+			<MinHeight DataType="@I" Default="1">1</MinHeight>
+			<MaxHeight DataType="@I" Default="30">30</MaxHeight>
+		</Ore>
+		<Ore Name="Onyx Ore">
+			<Hardness DataType="@F" Default="7.0">7.0</Hardness>
+			<Resistance DataType="@F" Default="5.0">5.0</Resistance>
+			<LightValue DataType="@F" Default="0.0">0.0</LightValue>
+			<HarvestLevel DataType="@I" Default="3">3</HarvestLevel>
+			<HarvestTool DataType="@S" Default="pickaxe">pickaxe</HarvestTool>
+			<SpawnRate DataType="@I" Default="6">6</SpawnRate>
+			<VeinSize DataType="@I" Default="6">6</VeinSize>
+			<MinHeight DataType="@I" Default="1">1</MinHeight>
+			<MaxHeight DataType="@I" Default="127">127</MaxHeight>
+			<DropItem DataType="@B" Default="true">true</DropItem>
+			<ItemToDrop DataType="@S" Default="simpleores:onyx_gem">simpleores:onyx_gem</ItemToDrop>
+			<QuantityToDrop DataType="@I" Default="1">1</QuantityToDrop>
+		</Ore>
+	</Ores>
+	<Blocks>
+		<Block Name="Block of Copper">
+			<Hardness DataType="@F" Default="7.0">7.0</Hardness>
+			<Resistance DataType="@F" Default="12.0">12.0</Resistance>
+			<LightValue DataType="@F" Default="0.0">0.0</LightValue>
+			<HarvestLevel DataType="@I" Default="0">0</HarvestLevel>
+			<HarvestTool DataType="@S" Default="pickaxe">pickaxe</HarvestTool>
+			<BeaconBase DataType="@B" Default="true">true</BeaconBase>
+		</Block>
+		<Block Name="Block of Tin">
+			<Hardness DataType="@F" Default="7.0">7.0</Hardness>
+			<Resistance DataType="@F" Default="12.0">12.0</Resistance>
+			<LightValue DataType="@F" Default="0.0">0.0</LightValue>
+			<HarvestLevel DataType="@I" Default="0">0</HarvestLevel>
+			<HarvestTool DataType="@S" Default="pickaxe">pickaxe</HarvestTool>
+			<BeaconBase DataType="@B" Default="true">true</BeaconBase>
+		</Block>
+		<Block Name="Block of Mythril">
+			<Hardness DataType="@F" Default="7.0">7.0</Hardness>
+			<Resistance DataType="@F" Default="12.0">12.0</Resistance>
+			<LightValue DataType="@F" Default="0.0">0.0</LightValue>
+			<HarvestLevel DataType="@I" Default="0">0</HarvestLevel>
+			<HarvestTool DataType="@S" Default="pickaxe">pickaxe</HarvestTool>
+			<BeaconBase DataType="@B" Default="true">true</BeaconBase>
+		</Block>
+		<Block Name="Block of Adamantium">
+			<Hardness DataType="@F" Default="7.0">7.0</Hardness>
+			<Resistance DataType="@F" Default="12.0">12.0</Resistance>
+			<LightValue DataType="@F" Default="0.0">0.0</LightValue>
+			<HarvestLevel DataType="@I" Default="0">0</HarvestLevel>
+			<HarvestTool DataType="@S" Default="pickaxe">pickaxe</HarvestTool>
+			<BeaconBase DataType="@B" Default="true">true</BeaconBase>
+		</Block>
+		<Block Name="Block of Onyx">
+			<Hardness DataType="@F" Default="20.0">20.0</Hardness>
+			<Resistance DataType="@F" Default="30.0">30.0</Resistance>
+			<LightValue DataType="@F" Default="0.0">0.0</LightValue>
+			<HarvestLevel DataType="@I" Default="0">0</HarvestLevel>
+			<HarvestTool DataType="@S" Default="pickaxe">pickaxe</HarvestTool>
+			<BeaconBase DataType="@B" Default="true">true</BeaconBase>
+		</Block>
+	</Blocks>
+	<Items>
+		<Item Name="Copper Ingot">
+			<StackSize DataType="@I" Default="64">64</StackSize>
+			<SmeltingXP DataType="@F" Default="0.4">0.4</SmeltingXP>
+		</Item>
+		<Item Name="Tin Ingot">
+			<StackSize DataType="@I" Default="64">64</StackSize>
+			<SmeltingXP DataType="@F" Default="0.4">0.4</SmeltingXP>
+		</Item>
+		<Item Name="Mythril Ingot">
+			<StackSize DataType="@I" Default="64">64</StackSize>
+			<SmeltingXP DataType="@F" Default="0.7">0.7</SmeltingXP>
+		</Item>
+		<Item Name="Adamantium Ingot">
+			<SmeltingXP DataType="@F" Default="0.7">0.7</SmeltingXP>
+		</Item>
+		<Item Name="Onyx Gem">
+			<StackSize DataType="@I" Default="64">64</StackSize>
+			<SmeltingXP DataType="@F" Default="1.0">1.0</SmeltingXP>
+		</Item>
+		<Item Name="Mythril Rod">
+			<StackSize DataType="@I" Default="64">64</StackSize>
+		</Item>
+		<Item Name="Onyx Rod">
+			<StackSize DataType="@I" Default="64">64</StackSize>
+		</Item>
+		<Item Name="Copper Bucket">
+			<StackSize DataType="@I" Default="16">16</StackSize>
+		</Item>
+	</Items>
+	<Tools>
+		<Tool Name="Copper Tools">
+			<Uses DataType="@I" Default="185">185</Uses>
+			<HarvestLevel DataType="@I" Default="1">1</HarvestLevel>
+			<HarvestSpeed DataType="@F" Default="4.0">4.0</HarvestSpeed>
+			<DamageVsEntity DataType="@F" Default="1.0">1.0</DamageVsEntity>
+			<Enchantability DataType="@I" Default="8">8</Enchantability>
+		</Tool>
+		<Tool Name="Tin Tools">
+			<Uses DataType="@I" Default="220">220</Uses>
+			<HarvestLevel DataType="@I" Default="1">1</HarvestLevel>
+			<HarvestSpeed DataType="@F" Default="3.5">3.5</HarvestSpeed>
+			<DamageVsEntity DataType="@F" Default="1.0">1.0</DamageVsEntity>
+			<Enchantability DataType="@I" Default="8">8</Enchantability>
+		</Tool>
+		<Tool Name="Mythril Tools">
+			<Uses DataType="@I" Default="800">800</Uses>
+			<HarvestLevel DataType="@I" Default="2">2</HarvestLevel>
+			<HarvestSpeed DataType="@F" Default="8.0">8.0</HarvestSpeed>
+			<DamageVsEntity DataType="@F" Default="3.0">3.0</DamageVsEntity>
+			<Enchantability DataType="@I" Default="12">12</Enchantability>
+		</Tool>
+		<Tool Name="Adamantium Tools">
+			<Uses DataType="@I" Default="1150">1150</Uses>
+			<HarvestLevel DataType="@I" Default="2">2</HarvestLevel>
+			<HarvestSpeed DataType="@F" Default="14.0">14.0</HarvestSpeed>
+			<DamageVsEntity DataType="@F" Default="3.0">3.0</DamageVsEntity>
+			<Enchantability DataType="@I" Default="3">3</Enchantability>
+		</Tool>
+		<Tool Name="Onyx Tools">
+			<Uses DataType="@I" Default="3280">3280</Uses>
+			<HarvestLevel DataType="@I" Default="4">4</HarvestLevel>
+			<HarvestSpeed DataType="@F" Default="10.0">10.0</HarvestSpeed>
+			<DamageVsEntity DataType="@F" Default="5.0">5.0</DamageVsEntity>
+			<Enchantability DataType="@I" Default="15">15</Enchantability>
+		</Tool>
+	</Tools>
+	<Bows>
+		<Bow Name="Mythril Bow">
+			<DamageModifier DataType="@F" Default="1.5">1.5</DamageModifier>
+			<EfficiencyChance DataType="@I" Default="50">50</EfficiencyChance>
+			<ZoomAmount DataType="@F" Default="0.165">0.165</ZoomAmount>
+		</Bow>
+		<Bow Name="Onyx Bow">
+			<DamageModifier DataType="@F" Default="1.5">1.5</DamageModifier>
+			<FireArrows DataType="@B" Default="true">true</FireArrows>
+			<ZoomAmount DataType="@F" Default="0.165">0.165</ZoomAmount>
+		</Bow>
+	</Bows>
+	<Armors>
+		<Armor Name="Copper Armor">
+			<Durability DataType="@I" Default="8">8</Durability>
+			<Enchantability DataType="@I" Default="8">8</Enchantability>
+			<HelmetReduction DataType="@I" Default="2">2</HelmetReduction>
+			<ChestplateReduction DataType="@I" Default="3">3</ChestplateReduction>
+			<LeggingsReduction DataType="@I" Default="2">2</LeggingsReduction>
+			<BootsReduction DataType="@I" Default="1">1</BootsReduction>
+		</Armor>
+		<Armor Name="Tin Armor">
+			<Durability DataType="@I" Default="8">8</Durability>
+			<Enchantability DataType="@I" Default="8">8</Enchantability>
+			<HelmetReduction DataType="@I" Default="2">2</HelmetReduction>
+			<ChestplateReduction DataType="@I" Default="3">3</ChestplateReduction>
+			<LeggingsReduction DataType="@I" Default="2">2</LeggingsReduction>
+			<BootsReduction DataType="@I" Default="1">1</BootsReduction>
+		</Armor>
+		<Armor Name="Mythril Armor">
+			<Durability DataType="@I" Default="22">22</Durability>
+			<Enchantability DataType="@I" Default="12">12</Enchantability>
+			<HelmetReduction DataType="@I" Default="3">3</HelmetReduction>
+			<ChestplateReduction DataType="@I" Default="5">5</ChestplateReduction>
+			<LeggingsReduction DataType="@I" Default="4">4</LeggingsReduction>
+			<BootsReduction DataType="@I" Default="3">3</BootsReduction>
+		</Armor>
+		<Armor Name="Adamantium Armor">
+			<Durability DataType="@I" Default="28">28</Durability>
+			<Enchantability DataType="@I" Default="3">3</Enchantability>
+			<HelmetReduction DataType="@I" Default="3">3</HelmetReduction>
+			<ChestplateReduction DataType="@I" Default="8">8</ChestplateReduction>
+			<LeggingsReduction DataType="@I" Default="6">6</LeggingsReduction>
+			<BootsReduction DataType="@I" Default="2">2</BootsReduction>
+		</Armor>
+		<Armor Name="Onyx Armor">
+			<Durability DataType="@I" Default="45">45</Durability>
+			<Enchantability DataType="@I" Default="15">15</Enchantability>
+			<HelmetReduction DataType="@I" Default="5">5</HelmetReduction>
+			<ChestplateReduction DataType="@I" Default="8">8</ChestplateReduction>
+			<LeggingsReduction DataType="@I" Default="6">6</LeggingsReduction>
+			<BootsReduction DataType="@I" Default="5">5</BootsReduction>
+		</Armor>
+	</Armors>
+</Configuration>
